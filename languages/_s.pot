@@ -291,21 +291,18 @@ msgid "pure"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://underscores.me"
+msgid "http://goer.org/"
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Hi. I'm a starter theme called <code>pure</code>, or <em>underscores</em>, if "
-"you like. I'm a theme meant for hacking so don't use me as a <em>Parent "
-"Theme</em>. Instead try turning me into the next, most awesome, WordPress "
-"theme out there. That's what I'm here for."
+"A lightweight theme based on Pure CSS, http://purecss.io."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Automattic"
+msgid "Evan Goer"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://automattic.com/"
+msgid "http://goer.org/"
 msgstr ""
