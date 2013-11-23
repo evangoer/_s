@@ -75,6 +75,8 @@ add_action( 'widgets_init', 'pure_widgets_init' );
  * Enqueue scripts and styles.
  */
 function pure_scripts() {
+	wp_enqueue_style( 'pure-css-base', 'http://yui.yahooapis.com/pure/0.3.0/pure-min.css' );
+
 	wp_enqueue_style( 'pure-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'pure-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
