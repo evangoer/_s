@@ -120,6 +120,12 @@ h1, h2, h3, h4 {
 .site-title a {
 	color: rgb(247, 186, 57);
 }
+.site-title {
+	margin-bottom: 0.1em;
+}
+.site-description {
+	margin-top: 0.1em;
+}
 .site-content {
 	padding: 1.5em;
 }
@@ -128,4 +134,9 @@ h1, h2, h3, h4 {
 }
 .entry-title {
 	margin-bottom: 0.2em;
+	font-weight: bold;
+}
+.entry-meta {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	color: rgb(150, 140, 140);
 }
