@@ -20,10 +20,12 @@ pure is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, I
 
 /*
  * 7, 5, 1
- * 136, 45, 22,
- * 211, 86, 34,
- * 224, 119, 36,
- * 247, 186, 57,
+ * 136, 45, 22
+ * 211, 86, 34
+ * 224, 119, 36
+ * 247, 186, 57
+ * 247, 225, 83
+ * 255, 253, 236
  */
 body {
 	background-color: rgb(255, 253, 236);
@@ -147,17 +149,51 @@ h1, h2, h3, h4 {
 .site-description {
 	margin-top: 0.1em;
 }
-.site-content {
-	padding: 1.5em;
-}
 .site-content a {
 	color: rgb(211, 86, 34);
 }
+.content-area {
+	margin: 3em 3em 3em 3em;
+}
 .entry-title {
-	margin-bottom: 0.2em;
 	font-weight: bold;
+	margin-bottom: 0.2em;
 }
 .entry-meta {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 	color: rgb(150, 140, 140);
+}
+.widget {
+	background-color: rgb(136, 45, 22);
+	border-top: 1px solid rgb(211, 86, 34);
+	clear: both;
+	padding: 1.5em 3em;
+	color: rgb(247, 186, 57);
+}
+
+.widget-title {
+	float: left;
+	margin: 0;
+	width: 30%;
+	font-size: 1.0em;
+	color: rgb(247, 186, 57);
+}
+.widget ul {
+	margin: 0 0 0 30%;
+	padding: 0;
+}
+.widget li {
+	list-style-type: none;
+}
+.widget a, .site-footer a {
+	color: rgb(255, 253, 236);
+}
+
+.site-footer {
+	background-color: rgb(7, 5, 1);
+	color: rgb(247, 186, 57);
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	font-size: 0.8em;
+	padding: 1.5em 3em;
+	text-align: center;
 }
