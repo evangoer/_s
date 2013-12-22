@@ -181,6 +181,12 @@ p {
 	color: #e07724;
 }
 
+/* Don't display two dates concatenated together, back-to-back.
+   If you want to explicitly say the post was updated, say so in the post body. */
+.posted-on .updated {
+	display: none;
+}
+
 .entry-meta {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 	color: rgb(150, 140, 140);
