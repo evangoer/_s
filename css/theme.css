@@ -236,26 +236,3 @@ p {
 	padding: 1.5em 3em;
 	text-align: center;
 }
-
-@media (max-width: 767px) {
-	.site {
-		padding-left: 0;
-	}
-	.sidebar {
-		bottom: auto;
-		margin: 0;
-		position: relative;
-		width: 100%;
-		top: auto;
-	}
-	.site-header {
-		margin: 2em auto;
-		position: static;
-		text-align: center;
-		top: auto;
-	}
-	.content-area,
-	.widget-area {
-		margin: 1.5em;
-	}
-}
