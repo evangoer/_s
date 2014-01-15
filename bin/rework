@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+var rework = require('rework'),
+    stdin = process.stdin,
+    inputCSS = '';
+
+stdin.resume();
+stdin.setEncoding('utf8');
+stdin.on('data', function (chunk) { inputCSS += chunk; });
+
+stdin.on('end', function () {
+    var outputCSS = rework(inputCSS)
+                    .use(rework.extend())
+                    .toString();
+
+    console.log(outputCSS);
+});
