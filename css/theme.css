@@ -116,6 +116,10 @@ p {
 
 .menu a {
 	extend: .pure-button;
+	background-color: #f7BA39;
+	border: 1px solid #882d16;
+	border-radius: 3px;
+	color: #882d16;
 }
 
 .site-title a {
@@ -216,4 +220,10 @@ p {
 .comment-form {
 	extend: .pure-form;
 	extend: .pure-form-stacked;
+}
+
+input[type=submit] {
+	extend: .pure-button;
+	background-color: #d35622;
+	color: #f7E153;
 }
