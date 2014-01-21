@@ -148,6 +148,15 @@ p {
 	margin: 3em;
 }
 
+.widget_search form {
+	display: inline-block;
+}
+
+.widget_search {
+	text-align: center;
+	max-width: 42em;
+}
+
 .entry-title {
 	font-size: 2.75em;
 	margin-bottom: 0.2em;
