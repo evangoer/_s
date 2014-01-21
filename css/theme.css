@@ -22,12 +22,12 @@ pure is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, I
  * #d35622 - orange: default link color
  * #e07724 - lighter orange: unused 
  * #f7BA39 - yellowish orange: site title, menu button backgrounds
- * #f7E153 - yellow: site title hover, menu button hover
- * #fffdec - pale: default body background
+ * #f7E153 - yellow: site title hover
+ * #fff    - white: default body background
  */
 body {
-	background-color: #fffdec;
-	color: #070501;
+	background-color: #fff;
+	color: #443;
 }
 
 body,
@@ -50,7 +50,7 @@ a:hover {
 }
 
 h1, h2, h3, h4 {
-	color: #070501;
+	color: #332;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 	font-weight: normal;
 }
@@ -130,10 +130,6 @@ p {
 	color: #f7E153;
 }
 
-.menu a:hover {
-	background-color: #f7E153;
-}
-
 .site-title {
 	margin-bottom: 0.1em;
 	text-transform: uppercase;
@@ -204,7 +200,7 @@ p {
 }
 
 .site-footer a {
-	color: #fffdec;
+	color: #fff;
 }
 
 .site-footer {
@@ -226,4 +222,8 @@ input[type=submit] {
 	extend: .pure-button;
 	background-color: #d35622;
 	color: #f7E153;
+}
+
+form {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 }
