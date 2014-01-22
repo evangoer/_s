@@ -3,6 +3,8 @@ MINIFY_CSS = node_modules/.bin/cleancss
 
 all: style.css
 
+style.css: $(CSS)
+
 %.rework:
 	cat $(CSS) > $@
 
