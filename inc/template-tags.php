@@ -130,7 +130,7 @@ function pure_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
-	printf( __( '<span class="byline">By %2$s</span><span class="posted-on"> on %1$s</span>', 'pure' ),
+	printf( __( '<span class="byline">By %2$s</span> &mdash; <span class="posted-on"> %1$s</span> %3$s', 'pure' ),
 		sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
 			esc_url( get_permalink() ),
 			$time_string
@@ -138,10 +138,24 @@ function pure_posted_on() {
 		sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s">%2$s</a></span>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			esc_html( get_the_author() )
-		)
+		),
+		pure_categories()
 	);
 }
 endif;
+
+function pure_categories() {
+	$category_list = get_the_category_list( __( ', ', 'pure' ) );
+	return pure_categorized_blog() ? "&mdash; <span class=\"categories\">$category_list</span>" : '';
+}
+
+function pure_tags() {
+	$tag_list = get_the_tag_list( '', __( ', ', 'pure' ) );
+	if ($tag_list != '') {
+		$tag_list = "<div class=\"tags\">Tagged: $tag_list.</div>";
+	}
+	return $tag_list;
+}
 
 /**
  * Returns true if a blog has more than 1 category.
