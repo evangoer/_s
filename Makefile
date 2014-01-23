@@ -1,18 +1,13 @@
-CSS = css/pure.css css/theme.css css/responsive.css
+CSS = pure.css theme.css responsive.css
 MINIFY_CSS = node_modules/.bin/cleancss
+PREPROCESS_CSS = ./bin/rework
+
+vpath %.css css
 
 all: style.css
 
 style.css: $(CSS)
-
-%.rework:
-	cat $(CSS) > $@
-
-%-max.css: %.rework
-	cat $< | ./bin/rework > $@
-
-%.css: %-max.css
-	$(MINIFY_CSS) $< > $@
+	cat $^ | $(PREPROCESS_CSS) | $(MINIFY_CSS) > $@
 
 clean:
 	rm -rf style.css
