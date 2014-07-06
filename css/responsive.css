@@ -17,7 +17,7 @@
 	}
 	.content-area,
 	.widget-area {
-		margin: 1.5em;
+		margin: 1em 0.5em;
 	}
     nav ul {
         padding: 0;
@@ -25,6 +25,7 @@
     h1,
     .entry-title {
         font-size: 1.66em;
+        margin-top: 0.2em;
     }
     h2 {
         font-size: 1.3em;
