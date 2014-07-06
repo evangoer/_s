@@ -19,10 +19,11 @@
 	.widget-area {
 		margin: 1.5em;
 	}
-    .menu ul {
+    nav ul {
         padding: 0;
     }
-    h1, .entry-title {
+    h1,
+    .entry-title {
         font-size: 1.66em;
     }
     h2 {
