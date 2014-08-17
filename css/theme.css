@@ -25,6 +25,11 @@ pure is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, I
  * #f7E153 - yellow: site title hover
  * #fff    - white: default body background
  */
+
+html {
+    background-color: #070501;
+}
+
 body {
 	background-color: #fff;
 	color: #443;
